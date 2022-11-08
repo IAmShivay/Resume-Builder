@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../Components/Header'
 import Navbar from '../Components/Navbar'
 const linksArray = ["Home", "Resume Templates", "My Resume", "About Us"]
-function HomePage() {
+function Home() {
   return (
     <>
        <Navbar links={linksArray} />
@@ -18,4 +18,4 @@ function HomePage() {
   )
 }
 
-export default HomePage
+export default Home;
