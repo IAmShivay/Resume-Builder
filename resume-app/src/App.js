@@ -1,17 +1,21 @@
 import './App.css';
-import Header from './Components/Header';
-import Navbar from './Components/Navbar';
-const linksArray = ["Home","Resume Templates","My Resume","About Us"]
+import ResumeTemplate from './Pages/ResumeTemplate';
+import MyResume from './Pages/MyResume';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import HomePage from './Pages/HomePage';
+
 
 function App() {
   return (
-    <div>
-      <Navbar links={linksArray}/><br />
-      <br />
-      <br />
-      <br />
-      <Header/>
-    </div>
+    <>
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='Resumetemplates' element={<ResumeTemplate />} />
+        <Route path='/Myresumes' element={<MyResume />} />
+      </Routes>
+    </>
+
+
   );
 }
 
