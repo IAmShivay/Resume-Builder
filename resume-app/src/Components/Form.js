@@ -4,10 +4,10 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import {Card} from '@mui/material';
-import TextComponent from './Professional'
-import WorkExpInfo from '../Components/WorkExpInfo'
-import EducationInfo from './EducationInfo';
-import KeySkill from './KeySkill';
+import Professional from '../Information/Professional';
+import WorkExpInfo from '../Information/WorkExpInfo';
+import EducationInfo from '../Information/EducationInfo';
+import KeySkill from '../Information/KeySkill';
 
 
 
@@ -70,7 +70,7 @@ export default function VerticalTabs() {
 
       </Tabs>
       <TabPanel value={value} index={0}>
-        <TextComponent />
+        <Professional />
       </TabPanel>
       <TabPanel value={value} index={1}>
         <WorkExpInfo />

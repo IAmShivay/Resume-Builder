@@ -16,7 +16,6 @@ export default function TextComponent() {
         }}
         noValidate
         autoComplete="off"
-        // onSubmit={handleSubmit(onSubmit)}
       ><Typography component="div" variant="h5" className=''>
           <span style={{ fontWeight: 650 }}>PERSONAL INFORMATION</span>
 

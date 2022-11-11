@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import ResumeText from '../Components/ResumeText'
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
@@ -14,12 +13,6 @@ const linksArray = ["Home", "Resume Template", "My Resume", "About Us"]
 
 
 function ResumeTemplate() {
-  // const[popup,setPopup]=useState(false);
-
-
-  // const handleClickOpen = () => {
-  //   setPopup(!popup);
-  // };
 
 
   return (
@@ -38,7 +31,6 @@ function ResumeTemplate() {
                 <Typography variant="subtitle1" color="text.secondary" component="div">
                   SELECT A TEMPLATES TO GET STARTED
                 </Typography>
-
               </CardContent>
               <Box sx={{ display: 'flex', alignItems: 'center', pl: 1, pb: 1 }}>
               </Box>
@@ -63,7 +55,6 @@ function ResumeTemplate() {
             subtitle="Updated 5/11"
           /><img src={Template4} alt="Live from space album cover" width={600} height={700}></img>
           <Button variant="contained" color="primary" sx={{ margin: '5px', height: 40 }}>Use Now</Button>
-          <ResumeText />
         </Card>
       </div>
       <div style={{ display: 'flex' }}>
@@ -87,10 +78,6 @@ function ResumeTemplate() {
 
         </Card>
       </div>
-      {/* {popup?<div>
-        <VerticalTabs/>
-      </div>:''} */}
-
     </div>
   )
 }
