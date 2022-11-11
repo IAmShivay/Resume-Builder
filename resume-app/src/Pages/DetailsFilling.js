@@ -1,12 +1,13 @@
-// import React from 'react'
-// import { Form } from 'react-router-dom'
+import React from 'react'
+import VerticalTabs from '../Components/Form'
 
-// function DetailsFilling() {
-//   return (
-//     <div>
-//       <Form/>
-//     </div>
-//   )
-// }
+function DetailsFilling() {
+  return (
+    <div>
+      <VerticalTabs/>
+    </div>
+  )
+}
 
-// export default DetailsFilling
+export default DetailsFilling
+

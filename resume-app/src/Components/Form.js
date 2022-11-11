@@ -1,11 +1,13 @@
-import * as React from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import { TextField, Card, CardContent } from '@mui/material';
-import TextComponent from './TextComponent'
+import {Card} from '@mui/material';
+import TextComponent from './Professional'
+import WorkExpInfo from '../Components/WorkExpInfo'
+import EducationInfo from './EducationInfo';
+import KeySkill from './KeySkill';
 
 
 
@@ -67,19 +69,17 @@ export default function VerticalTabs() {
         <Tab label="Key Skill"  {...a11yProps(3)} />
 
       </Tabs>
-
-     <TabPanel value={value} index={0}>
-        <TextComponent /></TabPanel>
-
-
+      <TabPanel value={value} index={0}>
+        <TextComponent />
+      </TabPanel>
       <TabPanel value={value} index={1}>
-
+        <WorkExpInfo />
       </TabPanel>
       <TabPanel value={value} index={2}>
-
+        <EducationInfo />
       </TabPanel>
       <TabPanel value={value} index={3}>
-
+        <KeySkill />
       </TabPanel>
 
     </Box>
